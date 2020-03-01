@@ -51,4 +51,16 @@ function getBands(artist) {
         });
 }
 
- 
+function getSongs (songName) {
+    spotify.search({ type: "track", query: songName}, function (err,data){
+        if (err) {
+            return console.log("Error occurred: " + err);
+        }
+
+        console.log("Artistis: ", data.tracks.items[0].album.artists[0].name)
+        console.log("Song Name:", data.tracks.items[0].name)
+        console.log("Preview Link: ", data.tracks.items[0].preview_url)
+        console.log("Album Name: ", data.tracks.items[0].album.name)
+    });
+}
+
