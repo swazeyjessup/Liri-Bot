@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/swazeyjessup/Liri-Bot#readme",
   "dependencies": {
-    "inquirer": "^7.0.5"
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "inquirer": "^7.0.5",
+    "moment": "^2.24.0",
+    "node-spotify-api": "^1.1.1"
   }
 }
