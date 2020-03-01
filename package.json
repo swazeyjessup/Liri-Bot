@@ -1,0 +1,23 @@
+{
+  "name": "Liri-Bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "keys.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swazeyjessup/Liri-Bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swazeyjessup/Liri-Bot/issues"
+  },
+  "homepage": "https://github.com/swazeyjessup/Liri-Bot#readme",
+  "dependencies": {
+    "inquirer": "^7.0.5"
+  }
+}
