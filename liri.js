@@ -64,3 +64,45 @@ function getSongs (songName) {
     });
 }
 
+function getMovies (movieName) {
+    axios.get("http://www.omdbapi.com/?apikey=42518777&t=" + movieName)
+        .then(function(data){
+            var results = `
+            Title of the movie: ${data.data.Title}
+            Year the movie came out: ${data.data.Year}
+            IMDB Rating of the movie: ${data.data.Rated}
+            Rotten Tomatoes Rating of the movie: ${data.data.Ratings[1].Value}
+            Country where the movie was produced: ${data.data.Country}
+            Language of the movie: ${data.data.Language}
+            Plot of the movie: ${data.data.Plot}
+            Actors in the movie: ${data.data.Actors}`;
+
+            console.log(results)
+        })
+
+        .catch(function (error){
+            console.log(error);
+        });
+
+}
+
+function doWhatItSays() {
+    fs.readFile("random.txt", "utf8", function (err, data){
+        data = data.split(",");
+        var action = data[0]
+        var value = data[1]
+        switch (action) {
+            case "concert-this":
+                getBands(value)
+                break;
+            case "spotify-this-song":
+                getSongs(value)
+                break;
+            case "movie-this":
+                getMovies(value)
+                break;
+            default:
+                break;
+        }
+    });
+}
