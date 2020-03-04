@@ -8,12 +8,16 @@ Challenge
 Use Node JS to create a LIRI bot, like iPhone's SIRI, but takes in commands through Language vs Speech using the following commands:
 
 concert-this
-![Concert-this](/Users/swazey/Desktop/BootCamp/Liri-Bot/images/concert-this.png)
-
+![picture](images/concert-this.png)
 
 spotify-this-song
+![picture](images/spotify-this-song.png)
+![picture](images/spotify-this-song2.png)
 
 movie-this
+![picture](images/movie-this.png)
+![picture](images/movie-this2.png)
 
 do-what-it-says
+![picture](images/do-what-it-says.png)
 
